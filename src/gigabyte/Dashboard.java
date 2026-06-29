@@ -11,9 +11,10 @@ import java.util.Locale;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 import views.clientes;
-import views.clientesUp;
 import views.equipos;
+import views.ordenes;
 import views.principal;
+import views.tecnicos;
 
 /**
  *
@@ -343,6 +344,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btn_tecnicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tecnicosActionPerformed
         // TODO add your handling code here:
+        ShowJPanel(new tecnicos());
     }//GEN-LAST:event_btn_tecnicosActionPerformed
 
     private void btn_equiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_equiposActionPerformed
@@ -352,6 +354,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btn_ordenes_trabajoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ordenes_trabajoActionPerformed
         // TODO add your handling code here:
+        ShowJPanel(new ordenes());
     }//GEN-LAST:event_btn_ordenes_trabajoActionPerformed
 
     private void btn_clientes4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_clientes4ActionPerformed

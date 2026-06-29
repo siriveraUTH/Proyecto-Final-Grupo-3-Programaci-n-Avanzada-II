@@ -4,6 +4,8 @@
  */
 package views;
 
+import gigabyte.Dashboard;
+
 /**
  *
  * @author DELL
@@ -27,34 +29,34 @@ public class equipos extends javax.swing.JPanel {
     private void initComponents() {
 
         bg = new javax.swing.JPanel();
-        title = new javax.swing.JLabel();
-        userSearch = new javax.swing.JTextField();
-        searchButton = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        deleteButton = new javax.swing.JButton();
-        editButton = new javax.swing.JButton();
-        addButton = new javax.swing.JButton();
+        title1 = new javax.swing.JLabel();
+        userSearch1 = new javax.swing.JTextField();
+        searchButton1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        deleteButton1 = new javax.swing.JButton();
+        editButton1 = new javax.swing.JButton();
+        addButton1 = new javax.swing.JButton();
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
 
-        title.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        title.setText("Equipos");
+        title1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        title1.setText("Equipos");
 
-        searchButton.setBackground(new java.awt.Color(30, 66, 184));
-        searchButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        searchButton.setForeground(new java.awt.Color(255, 255, 255));
-        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search.png"))); // NOI18N
-        searchButton.setBorderPainted(false);
-        searchButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        searchButton.addActionListener(new java.awt.event.ActionListener() {
+        searchButton1.setBackground(new java.awt.Color(30, 66, 184));
+        searchButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        searchButton1.setForeground(new java.awt.Color(255, 255, 255));
+        searchButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search.png"))); // NOI18N
+        searchButton1.setBorderPainted(false);
+        searchButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        searchButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchButtonActionPerformed(evt);
+                searchButton1ActionPerformed(evt);
             }
         });
 
-        jTable1.setFont(new java.awt.Font("Ubuntu", 0, 11)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTable2.setFont(new java.awt.Font("Ubuntu", 0, 11)); // NOI18N
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -77,47 +79,47 @@ public class equipos extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.getTableHeader().setReorderingAllowed(false);
-        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+        jTable2.getTableHeader().setReorderingAllowed(false);
+        jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jTable1MousePressed(evt);
+                jTable2MousePressed(evt);
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane2.setViewportView(jTable2);
 
-        deleteButton.setBackground(new java.awt.Color(30, 66, 184));
-        deleteButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        deleteButton.setForeground(new java.awt.Color(255, 255, 255));
-        deleteButton.setText("Borrar");
-        deleteButton.setBorderPainted(false);
-        deleteButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        deleteButton.addActionListener(new java.awt.event.ActionListener() {
+        deleteButton1.setBackground(new java.awt.Color(30, 66, 184));
+        deleteButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        deleteButton1.setForeground(new java.awt.Color(255, 255, 255));
+        deleteButton1.setText("Borrar");
+        deleteButton1.setBorderPainted(false);
+        deleteButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        deleteButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteButtonActionPerformed(evt);
-            }
-        });
-
-        editButton.setBackground(new java.awt.Color(30, 66, 184));
-        editButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        editButton.setForeground(new java.awt.Color(255, 255, 255));
-        editButton.setText("Editar");
-        editButton.setBorderPainted(false);
-        editButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        editButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editButtonActionPerformed(evt);
+                deleteButton1ActionPerformed(evt);
             }
         });
 
-        addButton.setBackground(new java.awt.Color(30, 66, 184));
-        addButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        addButton.setForeground(new java.awt.Color(255, 255, 255));
-        addButton.setText("Nuevo");
-        addButton.setBorderPainted(false);
-        addButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        addButton.addActionListener(new java.awt.event.ActionListener() {
+        editButton1.setBackground(new java.awt.Color(30, 66, 184));
+        editButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        editButton1.setForeground(new java.awt.Color(255, 255, 255));
+        editButton1.setText("Editar");
+        editButton1.setBorderPainted(false);
+        editButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        editButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addButtonActionPerformed(evt);
+                editButton1ActionPerformed(evt);
+            }
+        });
+
+        addButton1.setBackground(new java.awt.Color(30, 66, 184));
+        addButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        addButton1.setForeground(new java.awt.Color(255, 255, 255));
+        addButton1.setText("Nuevo");
+        addButton1.setBorderPainted(false);
+        addButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        addButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addButton1ActionPerformed(evt);
             }
         });
 
@@ -129,39 +131,39 @@ public class equipos extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgLayout.createSequentialGroup()
-                        .addComponent(jScrollPane1)
+                        .addComponent(jScrollPane2)
                         .addContainerGap())
                     .addGroup(bgLayout.createSequentialGroup()
-                        .addComponent(title, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                        .addComponent(title1, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
                         .addGap(699, 699, 699))
                     .addGroup(bgLayout.createSequentialGroup()
-                        .addComponent(searchButton)
+                        .addComponent(searchButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(userSearch, javax.swing.GroupLayout.DEFAULT_SIZE, 441, Short.MAX_VALUE)
+                        .addComponent(userSearch1, javax.swing.GroupLayout.DEFAULT_SIZE, 441, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(editButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(editButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(deleteButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12))))
         );
         bgLayout.setVerticalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bgLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(title1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(searchButton))
+                        .addComponent(searchButton1))
                     .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(userSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(deleteButton)
-                        .addComponent(editButton)
-                        .addComponent(addButton)))
+                        .addComponent(userSearch1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(deleteButton1)
+                        .addComponent(editButton1)
+                        .addComponent(addButton1)))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 508, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -177,35 +179,36 @@ public class equipos extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
-        
-    }//GEN-LAST:event_searchButtonActionPerformed
+    private void searchButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchButton1ActionPerformed
 
-    private void jTable1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MousePressed
+    private void jTable2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable2MousePressed
 
-    }//GEN-LAST:event_jTable1MousePressed
+    private void deleteButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_deleteButton1ActionPerformed
 
-    private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
-        
-    }//GEN-LAST:event_deleteButtonActionPerformed
+    private void editButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_editButton1ActionPerformed
 
-    private void editButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editButtonActionPerformed
-        
-    }//GEN-LAST:event_editButtonActionPerformed
-
-    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
-    }//GEN-LAST:event_addButtonActionPerformed
+    private void addButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addButton;
+    private javax.swing.JButton addButton1;
     private javax.swing.JPanel bg;
-    private javax.swing.JButton deleteButton;
-    private javax.swing.JButton editButton;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JButton searchButton;
-    private javax.swing.JLabel title;
-    private javax.swing.JTextField userSearch;
+    private javax.swing.JButton deleteButton1;
+    private javax.swing.JButton editButton1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JButton searchButton1;
+    private javax.swing.JLabel title1;
+    private javax.swing.JTextField userSearch1;
     // End of variables declaration//GEN-END:variables
 }
