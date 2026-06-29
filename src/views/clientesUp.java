@@ -47,7 +47,6 @@ public class clientesUp extends javax.swing.JPanel {
         lblRTN = new javax.swing.JLabel();
         txtRTN = new javax.swing.JTextField();
         lblFechaNacimiento = new javax.swing.JLabel();
-        txtFechaNacimiento = new javax.swing.JTextField();
         lblCorreo = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
         lblTelefono = new javax.swing.JLabel();
@@ -56,6 +55,7 @@ public class clientesUp extends javax.swing.JPanel {
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtaDireccion = new javax.swing.JTextArea();
+        jdcFechaNacimiento = new com.toedter.calendar.JDateChooser();
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -152,12 +152,6 @@ public class clientesUp extends javax.swing.JPanel {
 
         lblFechaNacimiento.setText("Fecha Nacimiento");
 
-        txtFechaNacimiento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFechaNacimientoActionPerformed(evt);
-            }
-        });
-
         lblCorreo.setText("Correo");
 
         txtCorreo.setToolTipText("");
@@ -186,14 +180,15 @@ public class clientesUp extends javax.swing.JPanel {
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bgLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtRTN, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addComponent(txtRTN, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jdcFechaNacimiento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(lblRTN, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(190, 190, 190)
-                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(lblFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(lblNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(bgLayout.createSequentialGroup()
                         .addComponent(lblApellidoP, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -256,10 +251,9 @@ public class clientesUp extends javax.swing.JPanel {
                         .addGap(10, 10, 10)
                         .addComponent(lblFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3)
-                        .addComponent(txtRTN, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(bgLayout.createSequentialGroup()
-                        .addGap(200, 200, 200)
-                        .addComponent(txtFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtRTN, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jdcFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(180, 180, 180)
                         .addComponent(lblRTN, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -312,10 +306,6 @@ public class clientesUp extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtIdentidadActionPerformed
 
-    private void txtFechaNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaNacimientoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaNacimientoActionPerformed
-
     private void txtRTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRTNActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtRTNActionPerformed
@@ -337,6 +327,7 @@ public class clientesUp extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JComboBox<String> jcbTipoP;
+    private com.toedter.calendar.JDateChooser jdcFechaNacimiento;
     private javax.swing.JTextArea jtaDireccion;
     private javax.swing.JLabel lblApellidoM;
     private javax.swing.JLabel lblApellidoP;
@@ -352,7 +343,6 @@ public class clientesUp extends javax.swing.JPanel {
     private javax.swing.JTextField txtApellidoMaterno;
     private javax.swing.JTextField txtApellidoP;
     private javax.swing.JTextField txtCorreo;
-    private javax.swing.JTextField txtFechaNacimiento;
     private javax.swing.JTextField txtIdentidad;
     private javax.swing.JTextField txtNombres;
     private javax.swing.JTextField txtRTN;

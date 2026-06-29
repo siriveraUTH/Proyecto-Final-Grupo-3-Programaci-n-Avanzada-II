@@ -57,7 +57,7 @@ public class mantenimientosUp extends javax.swing.JPanel {
         header.setBackground(new java.awt.Color(255, 255, 255));
 
         title.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        title.setText("Crear equipo");
+        title.setText("Crear mantenimiento");
 
         btn_registrar.setBackground(new java.awt.Color(18, 90, 173));
         btn_registrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -88,23 +88,24 @@ public class mantenimientosUp extends javax.swing.JPanel {
         headerLayout.setHorizontalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(6, 6, 6)
                 .addComponent(title)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 473, Short.MAX_VALUE)
+                .addGap(409, 409, 409)
                 .addComponent(btn_cancelar)
                 .addGap(18, 18, 18)
-                .addComponent(btn_registrar)
-                .addGap(32, 32, 32))
+                .addComponent(btn_registrar))
         );
         headerLayout.setVerticalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
-                .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+            .addGroup(headerLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(headerLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(btn_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(headerLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(btn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jlbCliente.setText("Orden Trabajo");
@@ -250,7 +251,7 @@ public class mantenimientosUp extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(bg, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

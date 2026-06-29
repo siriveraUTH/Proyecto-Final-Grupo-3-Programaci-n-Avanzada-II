@@ -38,15 +38,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="txtRTN" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="txtRTN" min="-2" pref="170" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jdcFechaNacimiento" max="32767" attributes="0"/>
+                      </Group>
                       <Component id="lblRTN" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="190" pref="190" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblFechaNacimiento" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
-                              <Component id="txtFechaNacimiento" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="lblFechaNacimiento" min="-2" pref="147" max="-2" attributes="0"/>
                       </Group>
                       <Component id="lblNombres" alignment="0" min="-2" pref="104" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
@@ -125,11 +126,10 @@
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="lblFechaNacimiento" min="-2" pref="17" max="-2" attributes="0"/>
                           <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                          <Component id="txtRTN" min="-2" pref="30" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
-                          <Component id="txtFechaNacimiento" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtRTN" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="jdcFechaNacimiento" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
@@ -326,11 +326,6 @@
             <Property name="text" type="java.lang.String" value="Fecha Nacimiento"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtFechaNacimiento">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaNacimientoActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JLabel" name="lblCorreo">
           <Properties>
             <Property name="text" type="java.lang.String" value="Correo"/>
@@ -382,6 +377,8 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="com.toedter.calendar.JDateChooser" name="jdcFechaNacimiento">
+        </Component>
       </SubComponents>
     </Container>
   </SubComponents>
