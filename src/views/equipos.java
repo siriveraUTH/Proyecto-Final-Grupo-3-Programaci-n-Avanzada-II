@@ -197,6 +197,7 @@ public class equipos extends javax.swing.JPanel {
 
     private void addButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButton1ActionPerformed
         // TODO add your handling code here:
+        Dashboard.ShowJPanel(new equiposUp());
     }//GEN-LAST:event_addButton1ActionPerformed
 
 

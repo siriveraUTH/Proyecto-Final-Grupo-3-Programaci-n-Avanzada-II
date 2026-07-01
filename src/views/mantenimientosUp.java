@@ -90,10 +90,11 @@ public class mantenimientosUp extends javax.swing.JPanel {
             .addGroup(headerLayout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addComponent(title)
-                .addGap(409, 409, 409)
+                .addGap(403, 403, 403)
                 .addComponent(btn_cancelar)
-                .addGap(18, 18, 18)
-                .addComponent(btn_registrar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_registrar)
+                .addContainerGap())
         );
         headerLayout.setVerticalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,10 +103,9 @@ public class mantenimientosUp extends javax.swing.JPanel {
                 .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(headerLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(btn_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(headerLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(btn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         jlbCliente.setText("Orden Trabajo");
@@ -260,7 +260,7 @@ public class mantenimientosUp extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
-        Dashboard.ShowJPanel(new equipos());
+        Dashboard.ShowJPanel(new mantenimientos());
     }//GEN-LAST:event_btn_cancelarActionPerformed
 
     private void txtSerieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSerieActionPerformed

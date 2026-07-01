@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 import views.clientes;
 import views.equipos;
+import views.mantenimientos;
 import views.ordenes;
 import views.principal;
 import views.tecnicos;
@@ -363,6 +364,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btn_mantenimientosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_mantenimientosActionPerformed
         // TODO add your handling code here:
+        ShowJPanel(new mantenimientos());
     }//GEN-LAST:event_btn_mantenimientosActionPerformed
 
     /**
