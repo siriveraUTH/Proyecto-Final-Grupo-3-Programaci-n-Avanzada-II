@@ -225,7 +225,7 @@ public class clientesUp extends javax.swing.JPanel {
                             .addComponent(lblTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane1)))
-            .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         bgLayout.setVerticalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -320,15 +320,29 @@ public class clientesUp extends javax.swing.JPanel {
     private void btn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_registrarActionPerformed
         // TODO add your handling code here:
         clientes cliente = new clientes();
-        cliente.setNombres("Maria");
-        cliente.setApellido_p("Pereira");
-        cliente.setApellido_m("Martinez");
-        cliente.setTipo_persona("natural");
-        cliente.setIdentidad("0801-2003-00004");
-        cliente.setFecha_nac("2026-02-02");
-        cliente.setCorreo("siriveragmail.com");
-        cliente.setTelefono("3263-4925");
-        cliente.setDireccion("Colonia Las Mercedes");
+        
+        String nombres = txtNombres.getText();
+        String apellidoP = txtApellidoP.getText();
+        String apellidoM = txtApellidoMaterno.getText();
+        String tipoPersona = jcbTipoP.getSelectedItem().toString();
+        String identidad = txtIdentidad.getText();
+        String rtn = txtRTN.getText();
+        String fecha_nac = (jdcFechaNacimiento.getDate() != null) ? new java.text.SimpleDateFormat("yyyy-MM-dd").format(jdcFechaNacimiento.getDate()) : null;
+        String correo = txtCorreo.getText();
+        String telefono = txtTelefono.getText();
+        String direccion = jtaDireccion.getText();
+        
+        
+        cliente.setNombres(nombres);
+        cliente.setApellido_p(apellidoP);
+        cliente.setApellido_m(apellidoM);
+        cliente.setTipo_persona(tipoPersona);
+        cliente.setIdentidad(identidad);
+        cliente.setRtn(rtn);
+        cliente.setFecha_nac(fecha_nac);
+        cliente.setCorreo(correo);
+        cliente.setTelefono(telefono);
+        cliente.setDireccion(direccion);
         try {
             DAOClientes dao = new DAOClientesImpl();
             dao.registrar(cliente);
