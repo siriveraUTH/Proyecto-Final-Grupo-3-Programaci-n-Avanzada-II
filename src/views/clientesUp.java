@@ -4,8 +4,11 @@
  */
 package views;
 
+import gigabyte.DAOClientesImpl;
 import gigabyte.Dashboard;
-import views.clientes;
+import interfaces.DAOClientes;
+import models.clientes;
+import views.vistaClientes;
 
 /**
  *
@@ -291,7 +294,7 @@ public class clientesUp extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
-        Dashboard.ShowJPanel(new clientes());
+        Dashboard.ShowJPanel(new vistaClientes());
     }//GEN-LAST:event_btn_cancelarActionPerformed
 
     private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
@@ -316,6 +319,22 @@ public class clientesUp extends javax.swing.JPanel {
 
     private void btn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_registrarActionPerformed
         // TODO add your handling code here:
+        clientes cliente = new clientes();
+        cliente.setNombres("Maria");
+        cliente.setApellido_p("Pereira");
+        cliente.setApellido_m("Martinez");
+        cliente.setTipo_persona("natural");
+        cliente.setIdentidad("0801-2003-00004");
+        cliente.setFecha_nac("2026-02-02");
+        cliente.setCorreo("siriveragmail.com");
+        cliente.setTelefono("3263-4925");
+        cliente.setDireccion("Colonia Las Mercedes");
+        try {
+            DAOClientes dao = new DAOClientesImpl();
+            dao.registrar(cliente);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }//GEN-LAST:event_btn_registrarActionPerformed
 
 
