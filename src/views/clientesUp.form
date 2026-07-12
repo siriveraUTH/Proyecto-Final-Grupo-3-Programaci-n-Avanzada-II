@@ -39,38 +39,42 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="txtRTN" min="-2" pref="170" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jdcFechaNacimiento" max="32767" attributes="0"/>
-                      </Group>
                       <Component id="lblRTN" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="190" pref="190" max="-2" attributes="0"/>
                           <Component id="lblFechaNacimiento" min="-2" pref="147" max="-2" attributes="0"/>
                       </Group>
                       <Component id="lblNombres" alignment="0" min="-2" pref="104" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="lblApellidoP" min="-2" pref="145" max="-2" attributes="0"/>
-                          <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-                          <Component id="lblApellidoM" min="-2" pref="147" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="lblTipoP" min="-2" pref="145" max="-2" attributes="0"/>
-                          <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-                          <Component id="lblIdentidad" min="-2" pref="145" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jcbTipoP" min="-2" pref="170" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="txtIdentidad" min="-2" pref="170" max="-2" attributes="0"/>
-                      </Group>
                       <Component id="txtApellidoP" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                           <Component id="txtNombres" min="-2" pref="360" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
-                              <Component id="txtApellidoMaterno" min="-2" pref="170" max="-2" attributes="0"/>
+                              <Component id="lblApellidoP" min="-2" pref="145" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblApellidoM" min="-2" pref="147" max="-2" attributes="0"/>
+                                  <Component id="txtApellidoMaterno" min="-2" pref="170" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="txtRTN" max="32767" attributes="0"/>
+                              <Component id="lblTipoP" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
+                              <Component id="jcbTipoP" alignment="1" pref="170" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblIdentidad" min="-2" pref="145" max="-2" attributes="0"/>
+                                      <Component id="txtIdentidad" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="jdcFechaNacimiento" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
@@ -78,7 +82,11 @@
                   <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="lblDireccion" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" alignment="0" pref="360" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="lblDireccion" min="-2" pref="107" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="lblCorreo" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
@@ -86,14 +94,13 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblTelefono" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                              <Component id="txtTelefono" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                              <Component id="lblTelefono" min="-2" pref="107" max="-2" attributes="0"/>
+                              <Component id="txtTelefono" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <Component id="header" alignment="0" min="-2" max="-2" attributes="0"/>
+              <Component id="header" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -102,56 +109,64 @@
                   <Component id="header" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="lblNombres" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                          <Component id="txtNombres" min="-2" pref="30" max="-2" attributes="0"/>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblApellidoP" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblApellidoM" min="-2" pref="17" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                          <Component id="txtApellidoMaterno" min="-2" pref="30" max="-2" attributes="0"/>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblTipoP" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblIdentidad" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jcbTipoP" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="txtIdentidad" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="lblFechaNacimiento" min="-2" pref="17" max="-2" attributes="0"/>
-                          <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtRTN" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jdcFechaNacimiento" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                          <Component id="jSeparator1" alignment="1" min="-2" pref="230" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblNombres" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                      <Component id="txtNombres" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="lblApellidoP" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblApellidoM" alignment="3" min="-2" pref="17" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                                      <Component id="txtApellidoMaterno" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblTipoP" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                              <Component id="jcbTipoP" min="-2" pref="30" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lblIdentidad" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txtIdentidad" min="-2" pref="30" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lblFechaNacimiento" min="-2" pref="17" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
+                                      <Component id="lblRTN" min="-2" pref="17" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                      <Component id="txtApellidoP" min="-2" pref="30" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jdcFechaNacimiento" pref="30" max="32767" attributes="0"/>
+                                  <Component id="txtRTN" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
-                          <Component id="lblRTN" min="-2" pref="17" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                          <Component id="txtApellidoP" min="-2" pref="30" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jSeparator1" alignment="1" min="-2" pref="230" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="lblCorreo" alignment="0" min="-2" pref="17" max="-2" attributes="0"/>
-                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                                          <Component id="txtTelefono" min="-2" pref="30" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="lblTelefono" alignment="0" min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblTelefono" min="-2" pref="18" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txtCorreo" pref="30" max="32767" attributes="0"/>
+                                      <Component id="txtTelefono" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="txtCorreo" min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -160,7 +175,7 @@
                           <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="311" max="32767" attributes="0"/>
+                  <EmptySpace pref="304" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -224,7 +239,7 @@
                 <Property name="text" type="java.lang.String" value="Registrar"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Default Cursor"/>
+                  <Color id="Cursor Por defecto"/>
                 </Property>
               </Properties>
               <Events>
@@ -245,7 +260,7 @@
                 <Property name="text" type="java.lang.String" value="Cancelar"/>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Default Cursor"/>
+                  <Color id="Cursor Por defecto"/>
                 </Property>
               </Properties>
               <Events>
@@ -267,9 +282,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtApellidoP">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoPActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblApellidoM">
           <Properties>
@@ -277,9 +289,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtApellidoMaterno">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtApellidoMaternoActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblTipoP">
           <Properties>
@@ -289,14 +298,16 @@
         <Component class="javax.swing.JComboBox" name="jcbTipoP">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
+              <StringArray count="3">
+                <StringItem index="0" value="Seleccione"/>
+                <StringItem index="1" value="Natural"/>
+                <StringItem index="2" value="Juridica"/>
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcbTipoPActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -306,20 +317,10 @@
             <Property name="text" type="java.lang.String" value="Identidad"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtIdentidad">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIdentidadActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JLabel" name="lblRTN">
           <Properties>
             <Property name="text" type="java.lang.String" value="RTN"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="txtRTN">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRTNActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblFechaNacimiento">
           <Properties>
@@ -340,11 +341,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="txtTelefono">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTelefonoActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblDireccion">
           <Properties>
@@ -378,6 +374,27 @@
           </SubComponents>
         </Container>
         <Component class="com.toedter.calendar.JDateChooser" name="jdcFechaNacimiento">
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="txtTelefono">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="(504) ####-####" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="txtIdentidad">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="####-####-#####" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="txtRTN">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##############" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

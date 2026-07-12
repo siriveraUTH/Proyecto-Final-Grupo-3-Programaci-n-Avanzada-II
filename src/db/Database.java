@@ -18,7 +18,7 @@ public class Database {
 
     protected Connection conexion;
     private final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private final String DB_URL = "jdbc:mysql://localhost/bd_gigabyte";
+    private final String DB_URL = "jdbc:mysql://localhost/bd_GigaByte";
 
     private final String USER = "root";
     private final String PASS = "";
@@ -30,6 +30,7 @@ public class Database {
             System.out.println("CONEXION REALIZADA CORRECTAMENTE");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("HUBO UN ERROR EN LA CONEXION");
         }
     }
 

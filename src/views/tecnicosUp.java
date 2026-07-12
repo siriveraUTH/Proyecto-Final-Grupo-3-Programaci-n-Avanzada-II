@@ -5,7 +5,7 @@
 package views;
 
 import gigabyte.Dashboard;
-import views.clientes;
+import views.vistaClientes;
 
 /**
  *
