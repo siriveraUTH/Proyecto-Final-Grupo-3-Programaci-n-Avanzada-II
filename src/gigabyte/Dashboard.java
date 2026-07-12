@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
-import views.clientes;
+import views.vistaClientes;
 import views.equipos;
 import views.mantenimientos;
 import views.ordenes;
@@ -340,7 +340,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btn_clientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_clientesActionPerformed
         // TODO add your handling code here:
-        ShowJPanel(new clientes());
+        ShowJPanel(new vistaClientes());
     }//GEN-LAST:event_btn_clientesActionPerformed
 
     private void btn_tecnicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tecnicosActionPerformed

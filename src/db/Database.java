@@ -30,6 +30,7 @@ public class Database {
             System.out.println("CONEXION REALIZADA CORRECTAMENTE");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("HUBO UN ERROR EN LA CONEXION");
         }
     }
 
